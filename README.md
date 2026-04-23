@@ -1,9 +1,9 @@
-# kjArgs Input Validator
+# kristan1 Input Validator
 
 A lightweight, TypeScript-based input validation library for Node.js applications. Perfect for validating form inputs, API payloads, and request data with minimal overhead.
 
-[![npm version](https://img.shields.io/npm/v/kjargs-input-validator.svg)](https://www.npmjs.com/package/kjargs-input-validator)
-[![License](https://img.shields.io/npm/l/kjargs-input-validator.svg)](https://github.com/kjArgs/fieldValidator-ts/blob/main/LICENSE)
+[![npm version](https://img.shields.io/npm/v/kristan1-input-validator.svg)](https://www.npmjs.com/package/kristan1-input-validator)
+[![License](https://img.shields.io/npm/l/kristan1-input-validator.svg)](https://github.com/kristan1/fieldValidator-ts/blob/main/LICENSE)
 
 ## Features
 
@@ -19,13 +19,13 @@ A lightweight, TypeScript-based input validation library for Node.js application
 Install via npm:
 
 ```bash
-npm install kjargs-input-validator
+npm install kristan1-input-validator
 ```
 
 Or with yarn:
 
 ```bash
-yarn add kjargs-input-validator
+yarn add kristan1-input-validator
 ```
 
 ## Quick Start
@@ -34,7 +34,7 @@ yarn add kjargs-input-validator
 
 ```typescript
 import express from "express";
-import { validate, ValidationSchema } from "kjargs-input-validator";
+import { validate, ValidationSchema } from "kristan1-input-validator";
 
 const app = express();
 app.use(express.json());
@@ -62,7 +62,7 @@ app.post("/login", validate(loginSchema), (req, res) => {
 ### Direct Validation
 
 ```typescript
-import { fieldChecker, ValidationSchema } from "kjargs-input-validator";
+import { fieldChecker, ValidationSchema } from "kristan1-input-validator";
 
 const schema: ValidationSchema = {
   email: { required: true, minLength: 5 },
@@ -172,7 +172,7 @@ const userSchema: ValidationSchema = {
 
 ```typescript
 import express, { Request, Response } from "express";
-import { fieldChecker, ValidationSchema } from "kjargs-input-validator";
+import { fieldChecker, ValidationSchema } from "kristan1-input-validator";
 
 const app = express();
 app.use(express.json());
@@ -208,7 +208,7 @@ app.listen(3000, () => console.log("Server running on port 3000"));
 
 ```typescript
 import express from "express";
-import { validate, ValidationSchema } from "kjargs-input-validator";
+import { validate, ValidationSchema } from "kristan1-input-validator";
 
 const app = express();
 app.use(express.json());
@@ -230,7 +230,7 @@ app.post("/products", validate(productSchema), (req, res) => {
 ### Example 3: Custom Validation Logic
 
 ```typescript
-import { fieldChecker, ValidationSchema } from "kjargs-input-validator";
+import { fieldChecker, ValidationSchema } from "kristan1-input-validator";
 
 const schema: ValidationSchema = {
   email: { required: true, minLength: 5 },
@@ -261,7 +261,7 @@ function validateUserData(data: any) {
 
 ```typescript
 import express from "express";
-import { fieldChecker, ValidationSchema } from "kjargs-input-validator";
+import { fieldChecker, ValidationSchema } from "kristan1-input-validator";
 import { User } from "./models/User";
 
 const app = express();
@@ -335,7 +335,7 @@ import {
   FieldRule,
   fieldChecker,
   validate,
-} from "kjargs-input-validator";
+} from "kristan1-input-validator";
 
 // Properly typed schema
 const mySchema: ValidationSchema = {
@@ -396,7 +396,7 @@ ISC
 
 ## Support
 
-For issues, questions, or feedback, please visit the [GitHub repository](https://github.com/kjArgs/fieldValidator-ts).
+For issues, questions, or feedback, please visit the [GitHub repository](https://github.com/kristan1/fieldValidator-ts).
 
 ---
 
